@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,13 +21,34 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn" id="signUpBtn">SignUp</button>
-                <button class="btn" id="loginBtn">Login</button>
+                <button onclick="window.location.href='../PAGES/register.html'" class="btn" id="signUpBtn">SignUp</button>
+                <button onclick="window.location.href='../PAGES/login.html'" class="btn" id="loginBtn">Login</button>
             </div>
             <div class="nav-menu-btn">
                 <i class="bx bx-menu"></i>
             </div>
         </nav>
+    </div>
+    <div className='hero container'>
+        <div className="banner">
+            <h1>{title}</h1>
+            <p>
+                Divex Medical Institute is a state-of-the-art facility dedicated to
+                providing comprehensive healthcare services with compassion and 
+                expertise. Our team of skilled professionals is committed to 
+                delivering personalized care tailored to each patient's needs. At
+                DivexCare, we priortise your well-being, ensuring a harmoniuos journey
+                towards optimal health and wellness.
+            </p>
+        </div>
+        <div>
+            <div className="banner">
+                <img src={imageUrl} alt="hero" className='animated-image'/>
+                <span>
+                    <img src="/Vector.png" alt="vector" />
+                </span>
+            </div>
+        </div>
     </div>
 </body>
 </html>

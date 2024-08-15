@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../CSS/login.css">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Portfolio</title>
+    <style>
+      .top span {
+        color: #fff;
+        font-size: small;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+      }
+      .top span a {
+        font-weight: 500;
+        color: #fff;
+        margin-left: 5px;
+      }
+    </style>
+</head> 
 <body>
     <div class="wrapper">
         <nav class="nav">
@@ -21,8 +35,8 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn" id="signUpBtn">SignUp</button>
-                <button class="btn" id="loginBtn">Login</button>
+                <!-- <button class="btn" id="signUpBtn">SignUp</button> -->
+                <button onclick="window.location.href='../PAGES/login.html'" class="btn" id="loginBtn">Login</button>
             </div>
             <div class="nav-menu-btn">
                 <i class="bx bx-menu"></i>
@@ -31,6 +45,7 @@
         <div class="form-box">
           <div class="register-container" id="register">
             <div class="top">
+              <!-- <span>Have an account? <a href="#">Login</a></span> -->
               <header>Sign Up</header>
             </div>
             <div class="two-forms">
@@ -44,14 +59,14 @@
             </div>
             </div>
             <div class="input-box">
-              <input type="text" class="input-field" placeholder="Email">
+              <input type="text" class="input-field" id="email" placeholder="Email">
               <i class="bx bx-envelope"></i>
             </div><div class="input-box">
-              <input type="password" class="input-field" placeholder="Password">
+              <input type="password" class="input-field" id="password" placeholder="Password">
               <i class="bx bx-lock-alt"></i>
             </div>
             <div class="input-box">
-              <input type="submit" class="input-field" value="Register">
+              <input type="submit" class="submit" value="Register">
             </div>
             <div class="two-col">
               <div class="one">
@@ -59,7 +74,7 @@
                 <label for="register-check">Remember Me</label>
               </div>
               <div class="two">
-                <label>Have an account? <a href="#" onclick="login()">Login</a></label>
+                <label>Have an account? <a href="../PAGES/login.html" onclick="login()">Login</a></label>
               </div>
             </div>
           </div>
