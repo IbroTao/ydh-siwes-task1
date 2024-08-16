@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper-box">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>PORTFOLIO</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../PAGES/home.html" class="link">Home</a></li>
+                    <li><a href="../PAGES/contact.html" class="link">Contacts</a></li>
+                    <li><a href="../PAGES/about.html" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button onclick="window.location.href='../PAGES/register.html'" class="btn" id="signUpBtn">SignUp</button>
+                <button onclick="window.location.href='../PAGES/login.html'" class="btn" id="loginBtn">Login</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="container-box">
+        <header class="header">
+            <!-- <h1>Contact Me</h1> -->
+            <p>Feel free to reach out through any of the following methods:</p>
+        </header>
+
+        <div class="contact-and-form">
+            <div class="contact-details">
+                <section class="contact-info">
+                    <h2>Phone Numbers</h2>
+                    <ul>
+                        <li><strong>Mobile:</strong> +234 91 2731 7254</li>
+                        <li><strong>Office:</strong> +234 81 4733 9598</li>
+                    </ul>
+                </section>
+
+                <section class="social-media">
+                    <h2>Social Media Handles</h2>
+                    <ul>
+                        <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter: @yourhandle</a></li>
+                        <li><a href="https://www.linkedin.com/in/yourhandle" target="_blank">LinkedIn: Your Name</a></li>
+                        <li><a href="https://github.com/yourhandle" target="_blank">GitHub: @yourhandle</a></li>
+                    </ul>
+                </section>
+
+                <section class="email">
+                    <h2>Email</h2>
+                    <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+                </section>
+            </div>
+
+            <div class="form-component message-form">
+                <h2>Send Me A Message</h2>
+                <form>
+                    <div>
+                        <input type="text" placeholder="First Name" />
+                        <input type="text" placeholder="Last Name" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email" />
+                        <input type="number" placeholder="Phone Number" />
+                    </div>
+                    <textarea rows="4" placeholder="Message"></textarea>
+                    <div class="submit-button">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
